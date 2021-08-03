@@ -1,0 +1,382 @@
+@font-face {
+  font-family: aAreaKilometer50;
+  src: url(aAreaKilometer50.ttf);
+}
+
+/* estilos generales */
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing:border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1, .container-center{
+  margin: 3% auto;
+  text-align:center;
+}
+
+/*estilos de menu*/
+a {
+  padding: 10px;
+  text-align:center;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+menu a:hover {
+  background-color: #4082c4;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+menu{
+  margin-top: 4%;
+}
+
+/* navegacion/inicio/categorias */
+header{
+  background-color: #221E1B;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+#navegacion2{
+  background-color: #221E1B;
+  padding: 10px;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* efecto parallax */
+.inicio{
+  /* background-image: url("../natural-fotos/gaviota.jpg"); */
+  background-image: url("https://c.pxhere.com/photos/36/8d/laptop_pen_tab_computer_hp_notebook-608893.jpg!d");
+  width: 100%;
+  height: 60vh;
+  min-height: 200px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@supports(object-fit: cover){
+  .inicio #tela{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+/* misio vision valores */
+div.centrado, h2{
+  text-align:center;
+}
+
+.parraf{  
+  width: 25%;
+  margin: 2%;
+  text-align: justify;
+  position: relative;
+  top: 0px;
+  padding: 5px;
+  object-fit: contain;
+  display: inline-grid;
+}
+
+.parrafAncho{
+  margin: 1%;
+  text-align: justify;
+  position: relative;
+  padding: 3%;
+  display: inline-grid;
+  border: 1px solid grey;
+
+}
+
+summary{
+  cursor: pointer;
+}
+
+/* botones y modo oscuro */
+.bdark{
+background-color: black;
+color: white;
+} 
+
+button{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    background: transparent ;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.active{
+border-bottom: 4px solid rgb(93, 173, 248);
+}
+
+
+/* estilos de galeria */
+#mensaje{
+  text-align: center;
+}
+
+.default{
+  width: 100%;
+}
+.container{
+  width: 30%; 
+  display: inline-block;
+  position: relative;
+  top:0px;
+  left: 0px;
+  cursor: pointer;
+  margin: 1%;   
+  
+}
+
+.container > div{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+  
+}
+.eachPh{
+  width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+}
+  .eachPh:hover{
+    opacity: 0.07;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    transition: opacity 400ms;
+  }
+
+  figcaption{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0px;
+}
+
+.centrarContenido{
+  margin: 4% auto;
+  text-align: center;
+}
+
+#parrafo{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  text-align:justify;
+  margin: 5% auto;
+  padding: 2%;
+  border-radius: 30px;  
+  background-color:#eee;
+}
+
+ul{
+  margin: 4%;
+  width: 25%; 
+  display: inline-block;
+  position: relative;
+}
+
+/* modal de la galeria para ampliar imagenes */
+.modal:target{
+  display: block;
+  position:fixed;
+  background: rgba(0,0,0,0.8);
+  top:0;
+  left: 0;  
+  width: 100%;  
+  height: 100%;
+  z-index:2;
+}
+
+.modal {
+  display: none;
+}
+
+.modal h3{
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.imagen{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.imagen img{
+  width: 70%;
+  max-width: 100%;
+}
+
+.cerrar{
+  display: block;
+  background: white;
+  width: 4%;
+  margin:3%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+}
+
+/*simbolos lenguajes*/
+.simbolos{
+  height: 15%; 
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  margin: 1%; 
+}
+.simbolos>img{
+  height: 60%;
+}
+
+
+/* responsive de header y galeria */
+@media screen and (max-width: 992px) {
+  .container{
+    width: 100%; 
+    display: inline-block;
+    position: relative;
+    top:0px;
+    left: 0px;
+    cursor: pointer;
+    margin: 1%;   
+    
+  }
+
+  header{
+    background-color: #221E1B;
+    padding: 10px;
+    color: white;
+    display: block;
+    position: relative;
+  }
+}
+
+
+/* estilos de footer */
+  footer{ 
+    background-color: #221E1B;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .container-footer{
+    color: white;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    background-color: black;
+  }
+
+  .container-body{
+    display: flex;
+  }
+
+  .colum1{
+    max-width: 20%;
+    margin: 5%;
+    text-align: justify;
+  }
+
+  .colum1 p{
+    margin-top: 20px;
+  }
+
+  .colum2{
+    width: 28%;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .colum3{
+    width: 28%;
+    margin: 5%;
+    align-items: center;
+  }
+
+  #logopie{
+    width:'80%'; 
+    top: 20%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.06;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* responsive footer y header */
+  @media screen and (max-width: 576px,360px) {
+    .container-body{
+      position: relative;
+      display: initial;
+    }
+    .colum1{
+      max-width: 100%;
+      margin: 5%;
+    }
+    .colum2{
+      width: 100%;
+      margin: 5%;
+    }
+    .colum3{
+      width: 100%;
+      margin: 5%;
+    }
+  }
