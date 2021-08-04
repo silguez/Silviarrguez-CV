@@ -75,12 +75,12 @@ function miFuncion(xml) {
 // para cambiar de modo oscuro a claro y viceversa
 
 function modos() {
-  document.body.classList.toggle("bdark");
-  let botonCambio = $("#btn").text();
+  document.body.classList.toggle('bdark');
+  let botonCambio = $('.btn').text();
   if (botonCambio == 'Modo claro') {
-    $("#btn").text('Modo oscuro');
+    $(".btn").text('Modo oscuro');
   } else {
-    $("#btn").text('Modo claro');
+    $(".btn").text('Modo claro');
   }
 
   //guardar modo en localstorage
@@ -90,15 +90,21 @@ function modos() {
   } else {
     localStorage.setItem('darkMode', 'false');
   }
+  
 };
 
 //obtenemos el modo actual
+//no funciona
 
 if(localStorage.getItem('darkMode') === 'true'){
-  document.body.classList.addClass("bdark");
+  document.body.classList.addClass('bdark');
 }else{
-  document.body.classList.removeClass("bdark");
+  document.body.classList.removeClass('bdark');
 }
+
+// fadein en parraf
+//tampoco funciona
+$(".parraf").hide().fadeIn(3000);
 
 // funcion de categorias de imagenes
 
