@@ -125,7 +125,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    padding: 1%;
+    padding: 10px;
     border: none;
     background: transparent ;
     color: white;
@@ -366,7 +366,7 @@ ul{
   }
 
   /* responsive footer y header */
-  @media screen and (max-width: 576px,360px) {
+  @media screen and (max-width: 411px,731px) {
     .container-body{
       position: relative;
       display: initial;
