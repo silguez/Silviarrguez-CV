@@ -33,14 +33,14 @@ function miFuncion(xml) {
     nombre = y[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
     foto = y[i].getElementsByTagName("foto")[0].childNodes[0].nodeValue;
     pie = y[i].getElementsByTagName("pie")[0].childNodes[0].nodeValue;
-    descripcion = y[i].getElementsByTagName("descripcion")[0].childNodes[0].nodeValue;
+    // descripcion = y[i].getElementsByTagName("descripcion")[0].childNodes[0].nodeValue;
     clase = y[i].getElementsByTagName("clase")[0].childNodes[0].nodeValue;
 
     //añado contenido html para agregar las imagenes usando las variables (xml)
     contenedor += `<div class='container ${clase}'>
-                    <div>
+                    <div class='centrarContenido'>
                       <h2>${nombre}</h2><br>
-                        <p>${descripcion}</p><br><br>
+                        <br><br>
                         <figcaption><b>${pie}</b></figcaption>
                     </div>
                     
