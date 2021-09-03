@@ -23,3 +23,10 @@ function loadFont() {
 
 
  //tengo que poner la fuente a Area Kilometer 50 
+
+
+//  habría que poner esto en el html:
+
+//  <canvas id="marcaPersonal">
+//  Your browser does not support the HTML canvas tag.
+// </canvas>

@@ -16,6 +16,10 @@ body, html {
   margin: 0;
 }
 
+.mPersonal{
+  width: 60%;
+}
+
 h1, .container-center{
   margin: 3% auto;
   text-align:center;
@@ -128,7 +132,7 @@ button{
     font-size: 1em;
     padding: 10px;
     border: none;
-    background: transparent ;
+    background: rgb(71, 71, 71) ;
     color: white;
 }
 button:hover{
@@ -355,6 +359,7 @@ ul{
     width: 28%;
     margin: 5%;
     text-align: center;
+    z-index:1;
   }
 
   .colum3{
@@ -402,4 +407,5 @@ ul{
       margin: 5%;
     }
   }
+
   
