@@ -74,8 +74,7 @@ header{
   /* background-image: url("../natural-fotos/gaviota.jpg"); */
   background-image: url("https://c.pxhere.com/photos/36/8d/laptop_pen_tab_computer_hp_notebook-608893.jpg!d");
   width: 100%;
-  height: 60vh;
-  min-height: 200px; 
+  height: 60%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,29 +295,12 @@ ul{
   height: 60%;
 }
 
+/*imagen iconos de lenguajes - apartado informatica*/
 
-/* responsive de header y galeria */
-@media screen and (max-width: 992px) {
-  .container{
-    width: 100%; 
-    display: inline-block;
-    position: relative;
-    top:0px;
-    left: 0px;
-    cursor: pointer;
-    margin: 1%;   
-    
-  }
-
-  header{
-    background-color: #221E1B;
-    padding: 10px;
-    color: white;
-    display: block;
-    position: relative;
-  }
+#img-code{
+  height: 80%; 
+  margin:2%;
 }
-
 
 /* estilos de footer */
   footer{ 
@@ -346,13 +328,9 @@ ul{
   }
 
   .colum1{
-    max-width: 20%;
+    width: 20%;
     margin: 5%;
     text-align: justify;
-  }
-
-  .colum1 p{
-    margin-top: 20px;
   }
 
   .colum2{
@@ -380,10 +358,10 @@ ul{
   }
 
   /* responsive footer y header */
-  @media screen and (max-width: 411px,731px) {
+  @media (max-width: 600px) {
     .container-body{
       position: relative;
-      display: initial;
+      display: grid;
     }
 
     header{
@@ -391,13 +369,47 @@ ul{
       position: relative;
     }
 
-    a{
+    menu a{
       margin: 3%;
     }
+
+    .parrafAncho ul p{
+      display: grid;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .parraf{  
+      display: grid;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .centrarContenido figure{
+      display: relative;
+      margin: 5%;
+      width: 100%;
+    }
+
+    #img-code{
+      height: 40%; 
+      margin:2%;
+    }
+
+    .container{
+      width: 100%;
+    }
+
     .colum1{
-      max-width: 100%;
+      width: 100%;
       margin: 5%;
     }
+
+    .colum1 p{
+      width: 80%;
+      margin: 0 auto;
+    }
+
     .colum2{
       width: 100%;
       margin: 5%;
