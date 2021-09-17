@@ -219,7 +219,7 @@ button:hover{
   background-color:rgb(173, 173, 173);
 }
 
-ul{
+.parrafoAncho ul{
   margin: 4%;
   width: 25%; 
   display: inline-block;
@@ -373,10 +373,17 @@ ul{
       margin: 3%;
     }
 
-    .parrafAncho ul p{
+    .parrafoAncho ul{
       display: grid;
       width: 100%;
       margin: 0 auto;
+    }
+
+    #parrafo{
+      display: grid;
+      width: 90%;
+      margin: 4%;
+      padding: 9%;
     }
 
     .parraf{  
